@@ -1,0 +1,295 @@
+2019-10-31 17:27:32.1820||DEBUG|Project.Program|init main 
+2019-10-31 17:27:32.8291||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Code Academy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-10-31 17:27:33.2846|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44397/api/values   
+2019-10-31 17:27:33.5397|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 255.2428ms 404  
+2019-10-31 17:29:10.7945||DEBUG|Project.Program|init main 
+2019-10-31 17:29:11.2121||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Code Academy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-10-31 17:29:11.6978|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44397/api/values   
+2019-10-31 17:29:11.8552|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 157.749ms 404  
+2019-10-31 17:30:59.3291||INFO|Project.Program|init main 
+2019-10-31 17:30:59.7498||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Code Academy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-10-31 17:31:00.3050|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44397/api/values   
+2019-10-31 17:31:00.4579|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 152.6277ms 404  
+2019-10-31 17:31:54.3656||DEBUG|Project.Program|Starting app 
+2019-10-31 17:31:54.9403||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Code Academy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-10-31 17:31:55.4185|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44397/api/values   
+2019-10-31 17:31:55.6806|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 262.2817ms 404  
+2019-10-31 17:32:05.0611|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44397/api/mathcount/add application/json 27 
+2019-10-31 17:32:05.1262|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Add", controller = "MathCount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(Project.Number) on controller Project.Controllers.MathCountController (Project). 
+2019-10-31 17:32:05.4820|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Project.Controllers.MathCountController.Add (Project) - Validation state: Valid 
+2019-10-31 17:32:05.4820||INFO|Project.Controllers.MathCountController|add 
+2019-10-31 17:32:05.7836|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'MathDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-10-31 17:32:06.1375|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (27ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [logReports] ([InsertDate], [LogMethodId], [Value])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [logReports]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-10-31 17:32:08.0406||INFO|Project.Controllers.MathCountController|result succesfull 
+2019-10-31 17:32:08.0490|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [logReports] ([InsertDate], [LogMethodId], [Value])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [logReports]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-10-31 17:32:08.0593|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Project.Controllers.MathCountController.Add (Project), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2570.2656ms. 
+2019-10-31 17:32:08.0742|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Int32'. 
+2019-10-31 17:32:08.0917|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Project.Controllers.MathCountController.Add (Project) in 2958.0967ms 
+2019-10-31 17:32:08.1038|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3042.7106ms 200 application/json; charset=utf-8 
+2019-10-31 18:23:06.6601||DEBUG|Project.Program|Starting app 
+2019-10-31 18:23:12.4269||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Code Academy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-10-31 18:23:14.5616|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44397/api/values   
+2019-10-31 18:23:15.3846|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 823.4696ms 404  
+2019-10-31 18:24:45.3889|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44397/api/mathcount/subtract application/json 28 
+2019-10-31 18:24:45.5406|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Subtract", controller = "MathCount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Subtract(Project.Number) on controller Project.Controllers.MathCountController (Project). 
+2019-10-31 18:24:46.2921|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Project.Controllers.MathCountController.Subtract (Project) - Validation state: Valid 
+2019-10-31 18:24:46.2921||INFO|Project.Controllers.MathCountController|subtract 
+2019-10-31 18:24:46.9192|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'MathDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-10-31 18:24:48.0856|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (18ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [logReports] ([InsertDate], [LogMethodId], [Value])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [logReports]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-10-31 18:24:50.6713||INFO|Project.Controllers.MathCountController|result succesfully 
+2019-10-31 18:24:50.6713|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [logReports] ([InsertDate], [LogMethodId], [Value])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [logReports]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-10-31 18:24:50.6887|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Project.Controllers.MathCountController.Subtract (Project), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4392.4597ms. 
+2019-10-31 18:24:50.7028|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Int32'. 
+2019-10-31 18:24:50.7278|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Project.Controllers.MathCountController.Subtract (Project) in 5182.2108ms 
+2019-10-31 18:24:50.7427|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5353.7346ms 200 application/json; charset=utf-8 
+2019-10-31 18:43:58.6982|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44397/api/mathcount/divide application/json 28 
+2019-10-31 18:43:58.6982|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Divide", controller = "MathCount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Divide(Project.Number) on controller Project.Controllers.MathCountController (Project). 
+2019-10-31 18:43:58.6982|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Project.Controllers.MathCountController.Divide (Project) - Validation state: Valid 
+2019-10-31 18:43:58.7286||INFO|Project.Controllers.MathCountController|divide 
+2019-10-31 18:43:58.7286|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'MathDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-10-31 18:43:58.7498|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [logReports] ([InsertDate], [LogMethodId], [Value])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [logReports]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-10-31 18:43:59.7789||INFO|Project.Controllers.MathCountController|result succesfully 
+2019-10-31 18:43:59.7789|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [logReports] ([InsertDate], [LogMethodId], [Value])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [logReports]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-10-31 18:43:59.8324|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Project.Controllers.MathCountController.Divide (Project), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1119.4459ms. 
+2019-10-31 18:43:59.8324|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Int32'. 
+2019-10-31 18:43:59.8324|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Project.Controllers.MathCountController.Divide (Project) in 1125.6172ms 
+2019-10-31 18:43:59.8324|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1137.961ms 200 application/json; charset=utf-8 
+2019-10-31 19:11:00.4985||DEBUG|Project.Program|Starting app 
+2019-10-31 19:11:01.0916||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Code Academy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-10-31 19:11:01.6614|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44397/api/values   
+2019-10-31 19:11:01.8494|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 188.8434ms 404  
+2019-10-31 19:12:04.6763|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44397/api/mathcount/multiply application/json 27 
+2019-10-31 19:12:04.7329|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Multiply", controller = "MathCount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Multiply(Project.Number) on controller Project.Controllers.MathCountController (Project). 
+2019-10-31 19:12:04.9274|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Project.Controllers.MathCountController.Multiply (Project) - Validation state: Valid 
+2019-10-31 19:12:04.9327||ERROR|Project.Controllers.MathCountController|multiply 
+2019-10-31 19:12:05.1458|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'MathDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-10-31 19:12:05.4608|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (37ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [logReports] ([InsertDate], [LogMethodId], [Value])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [logReports]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-10-31 19:12:06.7827||INFO|Project.Controllers.MathCountController|result succesfully 
+2019-10-31 19:12:06.8222|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [logReports] ([InsertDate], [LogMethodId], [Value])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [logReports]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-10-31 19:12:06.8324|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Project.Controllers.MathCountController.Multiply (Project), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1899.943ms. 
+2019-10-31 19:12:06.8454|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Int32'. 
+2019-10-31 19:12:06.8607|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Project.Controllers.MathCountController.Multiply (Project) in 2122.4579ms 
+2019-10-31 19:12:06.8794|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2203.1737ms 200 application/json; charset=utf-8 
+2019-10-31 19:24:25.9954|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44397/api/values   
+2019-10-31 19:24:25.9954|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.9314ms 404  
+2019-10-31 19:46:57.7319|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44397/api/values   
+2019-10-31 19:46:57.7319|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.8623ms 404  
+2019-10-31 20:20:16.8639|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:49356/   
+2019-10-31 20:20:16.9315|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 67.6277ms 307  
+2019-10-31 20:20:16.9978|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44397/   
+2019-10-31 20:20:16.9978|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.6051ms 404  
+2019-10-31 20:20:17.1105|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:49356/   
+2019-10-31 20:20:17.1105|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.6228ms 307  
+2019-10-31 20:20:17.1105|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44397/   
+2019-10-31 20:20:17.1105|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.7595ms 404  
+2019-10-31 20:20:20.0883|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:49356/   
+2019-10-31 20:20:20.0883|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.8649ms 307  
+2019-10-31 20:20:20.0883|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44397/   
+2019-10-31 20:20:20.0883|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.7597ms 404  
+2019-10-31 20:20:31.4975|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:49356/   
+2019-10-31 20:20:31.4975|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.0675ms 307  
+2019-10-31 20:20:31.4975|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44397/   
+2019-10-31 20:20:31.4975|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.8394ms 404  
+2019-10-31 20:22:54.9501||DEBUG|Project.Program|Starting app 
+2019-10-31 20:22:58.4385||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Code Academy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-10-31 20:22:59.9934|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44397/api/values   
+2019-10-31 20:22:59.9934|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:49356/  0 
+2019-10-31 20:23:00.3672|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 73.8259ms 200  
+2019-10-31 20:23:00.9644|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 972.5128ms 404  
+2019-10-31 20:27:10.6475||DEBUG|Project.Program|Starting app 
+2019-10-31 20:27:11.2364||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Code Academy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-10-31 20:27:11.8251|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44397/api/values   
+2019-10-31 20:27:12.0012|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 176.9116ms 404  
+2019-10-31 20:29:07.5869|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:49356/   
+2019-10-31 20:29:07.6043|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 17.344ms 307  
+2019-10-31 20:29:07.6261|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44397/   
+2019-10-31 20:29:07.6261|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.0786ms 404  
+2019-10-31 20:29:07.6356|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:49356/   
+2019-10-31 20:29:07.6356|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.0425ms 307  
+2019-10-31 20:29:07.6356|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44397/   
+2019-10-31 20:29:07.6356|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.0716ms 404  
+2019-10-31 20:54:22.3110||DEBUG|Project.Program|Starting app 
+2019-10-31 20:54:22.9622||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Code Academy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-10-31 20:54:23.5208|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44397/api/values   
+2019-10-31 20:54:23.6791|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 158.1472ms 404  
+2019-10-31 20:55:35.2845|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44397/api/mathcount/add application/json 28 
+2019-10-31 20:55:35.3414|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Add", controller = "MathCount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(Project.Number) on controller Project.Controllers.MathCountController (Project). 
+2019-10-31 20:55:35.5417|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Project.Controllers.MathCountController.Add (Project) - Validation state: Valid 
+2019-10-31 20:55:35.5417||INFO|Project.Controllers.MathCountController|add 
+2019-10-31 20:55:35.7587|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'MathDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-10-31 20:55:36.0097|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (16ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [logReports] ([InsertDate], [LogMethodId], [Value])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [logReports]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-10-31 20:55:37.4168||INFO|Project.Controllers.MathCountController|result succesfull 
+2019-10-31 20:55:37.4507|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [logReports] ([InsertDate], [LogMethodId], [Value])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [logReports]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-10-31 20:55:37.4507|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Project.Controllers.MathCountController.Add (Project), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1914.4386ms. 
+2019-10-31 20:55:37.4722|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Int32'. 
+2019-10-31 20:55:37.4852|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Project.Controllers.MathCountController.Add (Project) in 2139.5286ms 
+2019-10-31 20:55:37.5014|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2216.849ms 200 application/json; charset=utf-8 
+2019-10-31 23:46:01.0258||DEBUG|Project.Program|Starting app 
+2019-10-31 23:46:02.2631||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Code Academy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-10-31 23:46:02.7236|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44397/api/values   
+2019-10-31 23:46:02.9167|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 193.6321ms 404  
+2019-10-31 23:48:42.9509|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44397/api/mathcount/add application/json 28 
+2019-10-31 23:48:43.1167|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Add", controller = "MathCount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(Project.Number) on controller Project.Controllers.MathCountController (Project). 
+2019-10-31 23:48:43.6628|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Project.Controllers.MathCountController.Add (Project) - Validation state: Valid 
+2019-10-31 23:48:43.6708||INFO|Project.Controllers.MathCountController|add 
+2019-10-31 23:48:43.9277|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'MathDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-10-31 23:48:44.2912|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (28ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [logReports] ([InsertDate], [LogMethodId], [Value])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [logReports]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-10-31 23:48:47.3592||INFO|Project.Controllers.MathCountController|result succesfull 
+2019-10-31 23:48:47.3592|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [logReports] ([InsertDate], [LogMethodId], [Value])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [logReports]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-10-31 23:48:47.3753|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Project.Controllers.MathCountController.Add (Project), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3706.5025ms. 
+2019-10-31 23:48:47.3875|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Int32'. 
+2019-10-31 23:48:47.4159|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Project.Controllers.MathCountController.Add (Project) in 4294.4744ms 
+2019-10-31 23:48:47.4351|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4484.1897ms 200 application/json; charset=utf-8 
+2019-10-31 23:49:38.3318|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44397/api/mathcount/divide application/json 28 
+2019-10-31 23:49:38.3401|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Divide", controller = "MathCount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Divide(Project.Number) on controller Project.Controllers.MathCountController (Project). 
+2019-10-31 23:49:38.3401|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Project.Controllers.MathCountController.Divide (Project) - Validation state: Valid 
+2019-10-31 23:49:38.3401||INFO|Project.Controllers.MathCountController|divide 
+2019-10-31 23:49:38.3401|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'MathDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-10-31 23:49:38.3613|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [logReports] ([InsertDate], [LogMethodId], [Value])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [logReports]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-10-31 23:49:41.1935|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [logReports] ([InsertDate], [LogMethodId], [Value])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [logReports]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-10-31 23:49:41.1935|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [logReports] ([InsertDate], [LogMethodId], [Value])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [logReports]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-10-31 23:49:41.1990||ERROR|Project.Controllers.MathCountController|request dont correct 
+2019-10-31 23:49:41.1990|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Project.Controllers.MathCountController.Divide (Project) in 2861.3017ms 
+2019-10-31 23:49:41.1990|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.ServiceModel.FaultException: System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.OverflowException: Arithmetic operation resulted in an overflow.
+   at Calculator.Divide(Int32 intA, Int32 intB)
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location where exception was thrown ---
+   at Project.Controllers.MathCountController.Divide(Number num) in C:\Users\Code Academy\Desktop\aaa\Calc_Service\Project\Project\Controllers\MathCountController.cs:line 87
+   at Project.Controllers.MathCountController.Divide(Number num) in C:\Users\Code Academy\Desktop\aaa\Calc_Service\Project\Project\Controllers\MathCountController.cs:line 98
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-10-31 23:49:41.6862|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3354.4587ms 500 text/html; charset=utf-8 
+2019-10-31 23:50:53.3198|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44397/api/mathcount/divide application/json 28 
+2019-10-31 23:50:53.3198|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Divide", controller = "MathCount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Divide(Project.Number) on controller Project.Controllers.MathCountController (Project). 
+2019-10-31 23:50:53.3497|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'. 
+2019-10-31 23:50:53.3749|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Project.Controllers.MathCountController.Divide (Project) in 52.6174ms 
+2019-10-31 23:50:53.3749|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 56.2536ms 400 application/json; charset=utf-8 
+2019-10-31 23:51:37.4309|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44397/api/mathcount/multiply application/json 28 
+2019-10-31 23:51:37.4391|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Multiply", controller = "MathCount"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Multiply(Project.Number) on controller Project.Controllers.MathCountController (Project). 
+2019-10-31 23:51:37.4391|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Project.Controllers.MathCountController.Multiply (Project) - Validation state: Valid 
+2019-10-31 23:51:37.4391||ERROR|Project.Controllers.MathCountController|multiply 
+2019-10-31 23:51:37.4391|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'MathDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-10-31 23:51:37.4531|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [logReports] ([InsertDate], [LogMethodId], [Value])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [logReports]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-10-31 23:51:37.9806||INFO|Project.Controllers.MathCountController|result succesfully 
+2019-10-31 23:51:37.9806|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [logReports] ([InsertDate], [LogMethodId], [Value])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [logReports]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-10-31 23:51:38.0672|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Project.Controllers.MathCountController.Multiply (Project), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 625.4965ms. 
+2019-10-31 23:51:38.0672|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Int32'. 
+2019-10-31 23:51:38.0672|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Project.Controllers.MathCountController.Multiply (Project) in 629.814ms 
+2019-10-31 23:51:38.0672|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 640.3574ms 200 application/json; charset=utf-8 

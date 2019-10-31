@@ -8,8 +8,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using NLog.Web;
 using Project.Dal;
-using Project.Models;
+using Project.Models;  
 
 namespace Project
 {
@@ -17,6 +18,23 @@ namespace Project
     {
         public static void Main(string[] args)
         {
+            var log = NLogBuilder.ConfigureNLog("Nlog.config").GetCurrentClassLogger();
+            try
+            {
+                log.Debug("Starting app");
+                CreateWebHostBuilder(args).Build().Run();
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex, "Happened exception");
+                throw;
+            }
+            finally
+            {
+                NLog.LogManager.Shutdown();
+            }
+
+
             var WebHostBuilder = CreateWebHostBuilder(args).Build();
             using (var scope = WebHostBuilder.Services.CreateScope())
             {
@@ -57,7 +75,13 @@ namespace Project
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+          WebHost.CreateDefaultBuilder(args)
+              .UseStartup<Startup>()
+                 .ConfigureLogging(logging =>
+                 {
+                     logging.ClearProviders();
+                     logging.SetMinimumLevel(LogLevel.Trace);
+                 })
+                   .UseNLog();
     }
 }

@@ -12,6 +12,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Project.Dal;
+using Project.Interfaces;
+using ProjectTest;
 
 namespace Project
 {
@@ -29,6 +31,14 @@ namespace Project
         {
             services.AddDbContext<MathDbContext>(options =>
              options.UseSqlServer(Configuration["ConnectionString:Database_Name"]));
+
+
+            services.AddSingleton<CalculatorSoap>(new CalculatorSoapClient(CalculatorSoapClient.EndpointConfiguration.CalculatorSoap));
+
+            services.AddSingleton<IMathCount, MathCount>();
+
+
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

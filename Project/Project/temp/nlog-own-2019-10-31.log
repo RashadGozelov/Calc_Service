@@ -1,0 +1,49 @@
+2019-10-31 17:27:32.1820||DEBUG|Project.Program|init main |url: |action: 
+2019-10-31 17:29:10.7945||DEBUG|Project.Program|init main |url: |action: 
+2019-10-31 17:30:59.3291||INFO|Project.Program|init main |url: |action: 
+2019-10-31 17:31:54.3656||DEBUG|Project.Program|Starting app |url: |action: 
+2019-10-31 17:32:05.4820||INFO|Project.Controllers.MathCountController|add |url: https://localhost/api/mathcount/add|action: Add
+2019-10-31 17:32:08.0406||INFO|Project.Controllers.MathCountController|result succesfull |url: https://localhost/api/mathcount/add|action: Add
+2019-10-31 18:23:06.6601||DEBUG|Project.Program|Starting app |url: |action: 
+2019-10-31 18:24:46.2921||INFO|Project.Controllers.MathCountController|subtract |url: https://localhost/api/mathcount/subtract|action: Subtract
+2019-10-31 18:24:50.6713||INFO|Project.Controllers.MathCountController|result succesfully |url: https://localhost/api/mathcount/subtract|action: Subtract
+2019-10-31 18:43:58.7286||INFO|Project.Controllers.MathCountController|divide |url: https://localhost/api/mathcount/divide|action: Divide
+2019-10-31 18:43:59.7789||INFO|Project.Controllers.MathCountController|result succesfully |url: https://localhost/api/mathcount/divide|action: Divide
+2019-10-31 19:11:00.4985||DEBUG|Project.Program|Starting app |url: |action: 
+2019-10-31 19:12:04.9327||ERROR|Project.Controllers.MathCountController|multiply |url: https://localhost/api/mathcount/multiply|action: Multiply
+2019-10-31 19:12:06.7827||INFO|Project.Controllers.MathCountController|result succesfully |url: https://localhost/api/mathcount/multiply|action: Multiply
+2019-10-31 20:22:54.9501||DEBUG|Project.Program|Starting app |url: |action: 
+2019-10-31 20:27:10.6475||DEBUG|Project.Program|Starting app |url: |action: 
+2019-10-31 20:54:22.3110||DEBUG|Project.Program|Starting app |url: |action: 
+2019-10-31 20:55:35.5417||INFO|Project.Controllers.MathCountController|add |url: https://localhost/api/mathcount/add|action: Add
+2019-10-31 20:55:37.4168||INFO|Project.Controllers.MathCountController|result succesfull |url: https://localhost/api/mathcount/add|action: Add
+2019-10-31 23:46:01.0258||DEBUG|Project.Program|Starting app |url: |action: 
+2019-10-31 23:48:43.6708||INFO|Project.Controllers.MathCountController|add |url: https://localhost/api/mathcount/add|action: Add
+2019-10-31 23:48:47.3592||INFO|Project.Controllers.MathCountController|result succesfull |url: https://localhost/api/mathcount/add|action: Add
+2019-10-31 23:49:38.3401||INFO|Project.Controllers.MathCountController|divide |url: https://localhost/api/mathcount/divide|action: Divide
+2019-10-31 23:49:41.1990||ERROR|Project.Controllers.MathCountController|request dont correct |url: https://localhost/api/mathcount/divide|action: Divide
+2019-10-31 23:49:41.1990|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.ServiceModel.FaultException: System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.OverflowException: Arithmetic operation resulted in an overflow.
+   at Calculator.Divide(Int32 intA, Int32 intB)
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+--- End of stack trace from previous location where exception was thrown ---
+   at Project.Controllers.MathCountController.Divide(Number num) in C:\Users\Code Academy\Desktop\aaa\Calc_Service\Project\Project\Controllers\MathCountController.cs:line 87
+   at Project.Controllers.MathCountController.Divide(Number num) in C:\Users\Code Academy\Desktop\aaa\Calc_Service\Project\Project\Controllers\MathCountController.cs:line 98
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: https://localhost/api/mathcount/divide|action: Divide
+2019-10-31 23:51:37.4391||ERROR|Project.Controllers.MathCountController|multiply |url: https://localhost/api/mathcount/multiply|action: Multiply
+2019-10-31 23:51:37.9806||INFO|Project.Controllers.MathCountController|result succesfully |url: https://localhost/api/mathcount/multiply|action: Multiply
